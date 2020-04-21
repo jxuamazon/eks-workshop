@@ -2,6 +2,7 @@
 title: "Deploying Stateful Microservices with AWS EFS"
 chapter: true
 weight: 190
+hidden: true
 tags:
   - beginner
   - CON206

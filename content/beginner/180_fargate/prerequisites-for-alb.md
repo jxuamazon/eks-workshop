@@ -11,7 +11,7 @@ First, we will have to set up an OIDC provider with the cluster and create the I
 
 ```bash
 eksctl utils associate-iam-oidc-provider \
---cluster eksworkshop-eksctl \
+--cluster ${MY_CLUSTER_NAME} \
 --region=$AWS_REGION \
 --approve
 ```
@@ -65,7 +65,7 @@ Next, create a Kubernetes Service Account by executing the following command
 eksctl create iamserviceaccount \
   --name alb-ingress-controller \
   --namespace 2048-game \
-  --cluster eksworkshop-eksctl \
+  --cluster ${MY_CLUSTER_NAME} \
   --attach-policy-arn ${FARGATE_POLICY_ARN} \
   --approve \
   --override-existing-serviceaccounts

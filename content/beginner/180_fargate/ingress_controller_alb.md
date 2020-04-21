@@ -8,6 +8,10 @@ draft: false
 ### Helm
 
 We will use **Helm** to install the ALB Ingress Controller.
+```
+curl -sSL https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash
+```
+
 
 Check to see if `helm` is installed:
 
@@ -15,9 +19,12 @@ Check to see if `helm` is installed:
 helm version
 ```
 
-{{% notice info %}}
-If `Helm` is not found, see [installing helm](/beginner/060_helm/helm_intro/install/index.html) for instructions.
-{{% /notice %}}
+```sh
+helm completion bash >> ~/.bash_completion
+. /etc/profile.d/bash_completion.sh
+. ~/.bash_completion
+source <(helm completion bash)
+```
 
 Add helm incubator repository
 
@@ -27,7 +34,7 @@ helm repo add incubator http://storage.googleapis.com/kubernetes-charts-incubato
 
 ```bash
 # Get the VPC ID
-export VPC_ID=$(aws eks describe-cluster --name eksworkshop-eksctl --query "cluster.resourcesVpcConfig.vpcId" --output text)
+export VPC_ID=$(aws eks describe-cluster --name ${MY_CLUSTER_NAME} --query "cluster.resourcesVpcConfig.vpcId" --output text)
 
 
 helm --namespace 2048-game install 2048-game \
@@ -37,7 +44,7 @@ helm --namespace 2048-game install 2048-game \
   --set awsVpcID=${VPC_ID} \
   --set rbac.create=false \
   --set rbac.serviceAccount.name=alb-ingress-controller \
-  --set clusterName=eksworkshop-eksctl
+  --set clusterName=${MY_CLUSTER_NAME}
 ```
 
 Execute the following command to watch the progress by looking at the deployment status:

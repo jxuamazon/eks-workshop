@@ -39,7 +39,7 @@ apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 
 metadata:
-  name: eksworkshop-eksctl
+  name: ${MY_CLUSTER_NAME}
   region: ${AWS_REGION}
 
 managedNodeGroups:

@@ -13,7 +13,7 @@ It is generally a good practice to deploy user application workloads into namesp
 
 ```bash
 eksctl create fargateprofile \
-  --cluster eksworkshop-eksctl \
+  --cluster ${MY_CLUSTER_NAME}\
   --name 2048-game \
   --namespace 2048-game
 ```
@@ -28,7 +28,7 @@ Creation of a Fargate profile can take up to several minutes. Execute the follow
 
 ```bash
 eksctl get fargateprofile \
-  --cluster eksworkshop-eksctl \
+  --cluster ${MY_CLUSTER_NAME} \
   -o yaml
 ```
 

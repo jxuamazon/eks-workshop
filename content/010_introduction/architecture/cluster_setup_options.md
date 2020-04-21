@@ -3,6 +3,7 @@ title: "Kubernetes Cluster Setup"
 date: 2018-10-03T10:21:11-07:00
 draft: false
 weight: 120
+hidden: true
 ---
 
 

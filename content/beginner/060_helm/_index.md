@@ -1,6 +1,7 @@
 ---
 title: "Helm"
 chapter: true
+hidden: true
 weight: 60
 tags:
   - beginner

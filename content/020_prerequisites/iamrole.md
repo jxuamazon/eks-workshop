@@ -2,6 +2,7 @@
 title: "Create an IAM role for your Workspace"
 chapter: false
 disableToc: true
+hidden: true
 weight: 16
 ---
 

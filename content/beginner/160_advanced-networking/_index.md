@@ -2,6 +2,7 @@
 title: "Advanced VPC Networking with EKS"
 chapter: true
 weight: 160
+hidden: true
 tags:
   - intermediate
 ---

@@ -2,6 +2,7 @@
 title: "Intro to RBAC"
 chapter: true
 weight: 90
+hidden: true
 tags:
   - beginner
   - CON205

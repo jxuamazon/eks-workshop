@@ -2,6 +2,7 @@
 title: "Using IAM Groups to manage Kubernetes access"
 chapter: true
 weight: 91
+hidden: true
 tags:
   - beginner
 ---

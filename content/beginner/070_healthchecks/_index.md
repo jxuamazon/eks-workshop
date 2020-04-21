@@ -2,6 +2,7 @@
 title: "Health Checks"
 chapter: true
 weight: 70
+hidden: true
 tags:
   - beginner
   - CON206

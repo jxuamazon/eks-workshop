@@ -2,6 +2,7 @@
 title: "Stateful containers using StatefulSets"
 chapter: true
 weight: 170
+hidden: true
 tags:
   - beginner
   - CON206

@@ -2,6 +2,7 @@
 title: "Securing Your Cluster with Network Policies"
 chapter: true
 weight: 120
+hidden: true
 tags:
   - intermediate
 ---

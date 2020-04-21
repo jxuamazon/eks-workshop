@@ -3,6 +3,7 @@ title: "Using Spot Instances with EKS"
 chapter: true
 weight: 150
 draft: false
+hidden: true
 tags:
   - beginner
   - CON206

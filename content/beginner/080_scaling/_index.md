@@ -1,6 +1,7 @@
 ---
 title: "Autoscaling our Applications and Clusters"
 chapter: true
+hidden: true
 weight: 80
 tags:
   - beginner

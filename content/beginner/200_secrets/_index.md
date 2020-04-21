@@ -2,6 +2,7 @@
 title: "Securing Secrets using SealedSecrets"
 chapter: true
 weight: 200
+hidden: true
 tags:
   - beginner
   - CON206

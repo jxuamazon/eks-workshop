@@ -5,9 +5,7 @@ weight: 14
 ---
 
 {{% notice warning %}}
-The Cloud9 workspace should be built by an IAM user with Administrator privileges,
-not the root account user. Please ensure you are logged in as an IAM user, not the root
-account user.
+The lucky winner of player number 1, your Cloud9 Environment has been created for you. You can skip this step and move on to the next one
 {{% /notice %}}
 
 <!---

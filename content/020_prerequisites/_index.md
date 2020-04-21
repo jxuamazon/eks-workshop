@@ -14,9 +14,20 @@ tags:
 ---
 
 # Getting Started
-To start the workshop, follow one of the following depending on whether you are...
 
-* ...[running the workshop on your own (in your own account)](self_paced/), or
-* ...[attending an AWS hosted event (using AWS provided hashes)](aws_event/)
+Get familiar with the event portal
 
-Once you have completed with either setup, continue with [**Create a Workspace**](/020_prerequisites/workspace/)
+Create a online IDE for command line and coding 
+
+Install eksctl and kubectl command line interface
+
+Create roles and keys
+
+## NOTES for today: Since we are sharing each AWS account with multiple people, you will need to 
+
+1. Remember your number and use it in some resource names to avoid collision. 
+
+2. Setup your CLUSTER_NAME environment variable with "eksworkshop-eksctl-YOUR_NUMBER" 
+
+3. Ignore "resoruce X exists"  error when you create certain resources (cause one of your teammates have already done it).  
+4. 

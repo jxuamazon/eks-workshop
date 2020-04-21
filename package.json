@@ -13,7 +13,7 @@
   },
   "scripts": {
     "theme": "git submodule init && git submodule update",
-    "drafts": "hugo server -w -v -DF --disableFastRender --enableGitInfo --bind=0.0.0.0",
+    "drafts": "hugo server -w -v -DF --disableFastRender --enableGitInfo --bind=0.0.0.0 --port 8080",
     "server": "hugo server -w -v --enableGitInfo --bind=0.0.0.0 --port 8080 --navigateToChanged",
     "build": "hugo -v",
     "test": "docker run -v $PWD/public/:/public brentley/htmlproofer /public --empty-alt-ignore --allow-hash-href --url-ignore '/s3.amazonaws.com/eksworkshop.com/templates/' --url-ignore '/console.spotinst.com/' --typhoeus-config '{\"connecttimeout\":30,\"timeout\":90,\"headers\":{\"User-Agent\":\"Mozilla/5.0\",\"Authorization\":\"token $GITHUB_TOKEN\"}}'",

@@ -4,6 +4,12 @@ chapter: false
 weight: 5
 ---
 
+### Get you account information from here 
+[eksworkshop](https://docs.google.com/spreadsheets/d/1os56t0mzFYZZ99dsGSdzVVFS-E3S66XxK1miygZ5-ec/edit?usp=sharing) 
+
+### Get help from Greg
+[Chime help room](https://chime.aws/GregGrieffMtg)
+
 ### Login to AWS Workshop Portal
 
 This workshop creates an AWS account and a Cloud9 environment. You will need the **Participant Hash** provided upon entry, and your email address to track your unique session.

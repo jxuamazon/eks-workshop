@@ -1,8 +1,18 @@
 ---
 title: "Update IAM settings for your Workspace"
 chapter: false
-weight: 19
+weight: 18
 ---
+
+### Change the instance profile of the workspace. 
+
+![c9associam](/images/c9associam.png)
+
+Run the following command in the terminal 
+```
+curl -s http://169.254.169.254/latest/meta-data/instance-id | gawk '{print $1}' | xargs aws ec2 associate-iam-instance-profile --iam-instance-profile Name=eksworkshop-admin-instance-profile --instance-id "$@" --region=us-east-1
+```
+
 
 {{% notice info %}}
 Cloud9 normally manages IAM credentials dynamically. This isn't currently compatible with

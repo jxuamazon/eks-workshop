@@ -21,11 +21,11 @@ Virtualization of runtime environments on top of existing OS
 - Most polular container platform
 - Use a "Docker file" to build a "Docker Image" and run it on a "Docker Engine"
 - A "Docker Image" contains all the software needed for the application
-- Use shared docker images from a "hub"
+- Use shared docker images from a "hub" or build your own
 
-##### Sigularity container for scientific computing
+##### Singularity container for scientific computing
 - More control on the system, not need to ask cluster admins to install anything
-- Works great on clusters (take advantage of network fabrics)
+- Works great on HPC clusters (take advantage of network fabrics)
 
 
 

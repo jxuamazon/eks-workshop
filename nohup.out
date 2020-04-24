@@ -1,0 +1,218 @@
+
+> eksworkshop@1.0.0 server /efs/Dev/AWSProjects/eks-workshop
+> hugo server -w -v --enableGitInfo --bind=0.0.0.0 --port 8080 --navigateToChanged
+
+INFO 2020/04/21 22:07:33 Using config file: 
+Building sites … INFO 2020/04/21 22:07:33 syncing static files to /
+INFO 2020/04/21 22:07:34 found taxonomies: map[string]string{"category":"categories", "tag":"tags"}
+WARN 2020/04/21 22:07:34 Page's .URL is deprecated and will be removed in a future release. Use .Permalink or .RelPermalink. If what you want is the front matter URL value, use .Params.url.
+WARN 2020/04/21 22:07:34 Page's .UniqueID is deprecated and will be removed in a future release. Use .File.UniqueID.
+WARN 2020/04/21 22:07:35 Page's .Dir is deprecated and will be removed in a future release. Use .File.Dir.
+WARN 2020/04/21 22:07:36 .File.UniqueID on zero object. Wrap it in if or with: {{ with .File }}{{ .UniqueID }}{{ end }}
+
+                   | EN   
++------------------+-----+
+  Pages            | 423  
+  Paginator pages  |   0  
+  Non-page files   |  99  
+  Static files     | 377  
+  Processed images |   0  
+  Aliases          |   3  
+  Sitemaps         |   1  
+  Cleaned          |   0  
+
+Total in 3199 ms
+Watching for changes in /efs/Dev/AWSProjects/eks-workshop/{archetypes,content,layouts,static,themes}
+Watching for config changes in /efs/Dev/AWSProjects/eks-workshop/config.toml
+Environment: "development"
+Serving pages from memory
+Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+Web Server is available at //localhost:8080/ (bind address 0.0.0.0)
+Press Ctrl+C to stop
+
+> eksworkshop@1.0.0 server /efs/Dev/AWSProjects/eks-workshop
+> hugo server -w -v --enableGitInfo --bind=0.0.0.0 --port 8080 --navigateToChanged
+
+INFO 2020/04/22 02:22:58 Using config file: 
+Building sites … INFO 2020/04/22 02:22:58 syncing static files to /
+INFO 2020/04/22 02:22:59 found taxonomies: map[string]string{"category":"categories", "tag":"tags"}
+WARN 2020/04/22 02:22:59 Page's .URL is deprecated and will be removed in a future release. Use .Permalink or .RelPermalink. If what you want is the front matter URL value, use .Params.url.
+WARN 2020/04/22 02:22:59 Page's .UniqueID is deprecated and will be removed in a future release. Use .File.UniqueID.
+WARN 2020/04/22 02:23:01 .File.UniqueID on zero object. Wrap it in if or with: {{ with .File }}{{ .UniqueID }}{{ end }}
+WARN 2020/04/22 02:23:01 Page's .Dir is deprecated and will be removed in a future release. Use .File.Dir.
+
+                   | EN   
++------------------+-----+
+  Pages            | 423  
+  Paginator pages  |   0  
+  Non-page files   |  99  
+  Static files     | 380  
+  Processed images |   0  
+  Aliases          |   3  
+  Sitemaps         |   1  
+  Cleaned          |   0  
+
+Total in 3040 ms
+Watching for changes in /efs/Dev/AWSProjects/eks-workshop/{archetypes,content,layouts,static,themes}
+Watching for config changes in /efs/Dev/AWSProjects/eks-workshop/config.toml
+Environment: "development"
+Serving pages from memory
+Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+Web Server is available at //localhost:8080/ (bind address 0.0.0.0)
+Press Ctrl+C to stop
+
+> eksworkshop@1.0.0 server /efs/Dev/AWSProjects/eks-workshop
+> hugo server -w -v --enableGitInfo --bind=0.0.0.0 --port 8080 --navigateToChanged
+
+INFO 2020/04/22 03:02:12 Using config file: 
+Building sites … INFO 2020/04/22 03:02:12 syncing static files to /
+INFO 2020/04/22 03:02:13 found taxonomies: map[string]string{"category":"categories", "tag":"tags"}
+WARN 2020/04/22 03:02:13 Page's .URL is deprecated and will be removed in a future release. Use .Permalink or .RelPermalink. If what you want is the front matter URL value, use .Params.url.
+WARN 2020/04/22 03:02:13 Page's .UniqueID is deprecated and will be removed in a future release. Use .File.UniqueID.
+WARN 2020/04/22 03:02:15 .File.UniqueID on zero object. Wrap it in if or with: {{ with .File }}{{ .UniqueID }}{{ end }}
+WARN 2020/04/22 03:02:15 Page's .Dir is deprecated and will be removed in a future release. Use .File.Dir.
+
+                   | EN   
++------------------+-----+
+  Pages            | 423  
+  Paginator pages  |   0  
+  Non-page files   |  99  
+  Static files     | 380  
+  Processed images |   0  
+  Aliases          |   3  
+  Sitemaps         |   1  
+  Cleaned          |   0  
+
+Total in 3260 ms
+Watching for changes in /efs/Dev/AWSProjects/eks-workshop/{archetypes,content,layouts,static,themes}
+Watching for config changes in /efs/Dev/AWSProjects/eks-workshop/config.toml
+Environment: "development"
+Serving pages from memory
+Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+Web Server is available at //localhost:8080/ (bind address 0.0.0.0)
+Press Ctrl+C to stop
+
+> eksworkshop@1.0.0 server /efs/Dev/AWSProjects/eks-workshop
+> hugo server -w -v --enableGitInfo --bind=0.0.0.0 --port 8080 --navigateToChanged
+
+port 8080 already in use, attempting to use an available port
+INFO 2020/04/22 15:45:15 Using config file: 
+Building sites … INFO 2020/04/22 15:45:15 syncing static files to /
+INFO 2020/04/22 15:45:16 found taxonomies: map[string]string{"category":"categories", "tag":"tags"}
+WARN 2020/04/22 15:45:16 Page's .URL is deprecated and will be removed in a future release. Use .Permalink or .RelPermalink. If what you want is the front matter URL value, use .Params.url.
+WARN 2020/04/22 15:45:16 Page's .UniqueID is deprecated and will be removed in a future release. Use .File.UniqueID.
+WARN 2020/04/22 15:45:19 .File.UniqueID on zero object. Wrap it in if or with: {{ with .File }}{{ .UniqueID }}{{ end }}
+WARN 2020/04/22 15:45:19 Page's .Dir is deprecated and will be removed in a future release. Use .File.Dir.
+
+                   | EN   
++------------------+-----+
+  Pages            | 422  
+  Paginator pages  |   0  
+  Non-page files   |  99  
+  Static files     | 380  
+  Processed images |   0  
+  Aliases          |   3  
+  Sitemaps         |   1  
+  Cleaned          |   0  
+
+Total in 4239 ms
+Watching for changes in /efs/Dev/AWSProjects/eks-workshop/{archetypes,content,layouts,static,themes}
+Watching for config changes in /efs/Dev/AWSProjects/eks-workshop/config.toml
+Environment: "development"
+Serving pages from memory
+Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+Web Server is available at //localhost:38239/ (bind address 0.0.0.0)
+Press Ctrl+C to stop
+
+> eksworkshop@1.0.0 server /efs/Dev/AWSProjects/eks-workshop
+> hugo server -w -v --enableGitInfo --bind=0.0.0.0 --port 8080 --navigateToChanged
+
+INFO 2020/04/22 16:13:33 Using config file: 
+Building sites … INFO 2020/04/22 16:13:33 syncing static files to /
+INFO 2020/04/22 16:13:35 found taxonomies: map[string]string{"category":"categories", "tag":"tags"}
+WARN 2020/04/22 16:13:35 Page's .URL is deprecated and will be removed in a future release. Use .Permalink or .RelPermalink. If what you want is the front matter URL value, use .Params.url.
+WARN 2020/04/22 16:13:35 Page's .UniqueID is deprecated and will be removed in a future release. Use .File.UniqueID.
+WARN 2020/04/22 16:13:37 .File.UniqueID on zero object. Wrap it in if or with: {{ with .File }}{{ .UniqueID }}{{ end }}
+WARN 2020/04/22 16:13:37 Page's .Dir is deprecated and will be removed in a future release. Use .File.Dir.
+
+                   | EN   
++------------------+-----+
+  Pages            | 422  
+  Paginator pages  |   0  
+  Non-page files   |  99  
+  Static files     | 380  
+  Processed images |   0  
+  Aliases          |   3  
+  Sitemaps         |   1  
+  Cleaned          |   0  
+
+Total in 4115 ms
+Watching for changes in /efs/Dev/AWSProjects/eks-workshop/{archetypes,content,layouts,static,themes}
+Watching for config changes in /efs/Dev/AWSProjects/eks-workshop/config.toml
+Environment: "development"
+Serving pages from memory
+Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+Web Server is available at //localhost:8080/ (bind address 0.0.0.0)
+Press Ctrl+C to stop
+
+> eksworkshop@1.0.0 server /efs/Dev/AWSProjects/eks-workshop
+> hugo server -w -v --enableGitInfo --bind=0.0.0.0 --port 8080 --navigateToChanged
+
+INFO 2020/04/23 00:38:59 Using config file: 
+Building sites … INFO 2020/04/23 00:38:59 syncing static files to /
+INFO 2020/04/23 00:39:00 found taxonomies: map[string]string{"category":"categories", "tag":"tags"}
+WARN 2020/04/23 00:39:00 Page's .URL is deprecated and will be removed in a future release. Use .Permalink or .RelPermalink. If what you want is the front matter URL value, use .Params.url.
+WARN 2020/04/23 00:39:00 Page's .UniqueID is deprecated and will be removed in a future release. Use .File.UniqueID.
+WARN 2020/04/23 00:39:02 .File.UniqueID on zero object. Wrap it in if or with: {{ with .File }}{{ .UniqueID }}{{ end }}
+WARN 2020/04/23 00:39:02 Page's .Dir is deprecated and will be removed in a future release. Use .File.Dir.
+
+                   | EN   
++------------------+-----+
+  Pages            | 422  
+  Paginator pages  |   0  
+  Non-page files   |  99  
+  Static files     | 380  
+  Processed images |   0  
+  Aliases          |   3  
+  Sitemaps         |   1  
+  Cleaned          |   0  
+
+Total in 3126 ms
+Watching for changes in /efs/Dev/AWSProjects/eks-workshop/{archetypes,content,layouts,static,themes}
+Watching for config changes in /efs/Dev/AWSProjects/eks-workshop/config.toml
+Environment: "development"
+Serving pages from memory
+Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+Web Server is available at //localhost:8080/ (bind address 0.0.0.0)
+Press Ctrl+C to stop
+
+> eksworkshop@1.0.0 server /efs/Dev/AWSProjects/eks-workshop
+> hugo server -w -v --enableGitInfo --bind=0.0.0.0 --port 8080 --navigateToChanged
+
+INFO 2020/04/23 16:56:40 Using config file: 
+Building sites … INFO 2020/04/23 16:56:40 syncing static files to /
+INFO 2020/04/23 16:56:41 found taxonomies: map[string]string{"category":"categories", "tag":"tags"}
+WARN 2020/04/23 16:56:41 Page's .URL is deprecated and will be removed in a future release. Use .Permalink or .RelPermalink. If what you want is the front matter URL value, use .Params.url.
+WARN 2020/04/23 16:56:41 Page's .UniqueID is deprecated and will be removed in a future release. Use .File.UniqueID.
+WARN 2020/04/23 16:56:43 .File.UniqueID on zero object. Wrap it in if or with: {{ with .File }}{{ .UniqueID }}{{ end }}
+WARN 2020/04/23 16:56:44 Page's .Dir is deprecated and will be removed in a future release. Use .File.Dir.
+
+                   | EN   
++------------------+-----+
+  Pages            | 422  
+  Paginator pages  |   0  
+  Non-page files   |  99  
+  Static files     | 380  
+  Processed images |   0  
+  Aliases          |   3  
+  Sitemaps         |   1  
+  Cleaned          |   0  
+
+Total in 4267 ms
+Watching for changes in /efs/Dev/AWSProjects/eks-workshop/{archetypes,content,layouts,static,themes}
+Watching for config changes in /efs/Dev/AWSProjects/eks-workshop/config.toml
+Environment: "development"
+Serving pages from memory
+Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+Web Server is available at //localhost:8080/ (bind address 0.0.0.0)
+Press Ctrl+C to stop

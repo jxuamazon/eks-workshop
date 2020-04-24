@@ -42,6 +42,8 @@ metadata:
   name: ${MY_CLUSTER_NAME}
   region: ${AWS_REGION}
 
+availabilityZones: ["us-east-1a", "us-east-1b", "us-east-1c"]
+
 managedNodeGroups:
 - name: nodegroup
   desiredCapacity: 3

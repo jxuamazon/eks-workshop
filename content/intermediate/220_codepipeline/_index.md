@@ -1,5 +1,5 @@
 ---
-title: "CI/CD with CodePipeline"
+title: "* CI/CD with CodePipeline"
 chapter: true
 weight: 220
 draft: false
@@ -18,3 +18,7 @@ without disruption.
 
 In this module, we will build a CI/CD pipeline using [AWS CodePipeline](https://aws.amazon.com/codepipeline/). The CI/CD pipeline will deploy a sample Kubernetes service,
 we will make a change to the GitHub repository and observe the automated delivery of this change to the cluster.
+
+The integration between github (or other repo) is through event driven webhook. In the case of CodePipeline integration, Amazon API Gateway backed by a lambda function is used 
+
+![Git](/images/codepipeline-github-architecture.png)

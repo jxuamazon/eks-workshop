@@ -19,15 +19,19 @@ onboard new services to your EKS cluster. For each new service the following ste
 
 Click the **Launch** button to create the CloudFormation stack in the AWS Management Console.
 
+If you are not sharing an ekscluster , use this:
+
 | Launch template |  |  |
 | ------ |:------:|:--------:|
 | CodePipeline & EKS |  {{< cf-launch "ci-cd-codepipeline.cfn.yml" "eksws-codepipeline" >}} | {{< cf-download "ci-cd-codepipeline.cfn.yml" >}}  |
 
+Otherwise, download this template to your computer and create a stack with this in AWS Console/Services/CloudFormation: 
+
 <a
-href="https://console.aws.amazon.com/cloudformation/home?#/stacks/create/review?stackName=eksws-codepipeline&templateURL=https://eksworkshop.myoctank.net/intermediate/220_codepipeline/deployed.files/ci-cd-codepipeline.cfn.yml"
+href="https://eksworkshop.myoctank.net/intermediate/220_codepipeline/deployed.files/ci-cd-codepipeline.cfn.yml"
 target="_blank" class="btn btn-default">
 <i class="fas fa-cloud-upload-alt"></i>
-Launch
+Launch from local file
 </a>
 
 After the console is open, enter your GitHub username, personal access token (created in previous step), check the acknowledge box and then click the "Create stack" button located at the bottom of the page.

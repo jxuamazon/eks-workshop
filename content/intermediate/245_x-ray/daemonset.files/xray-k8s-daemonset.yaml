@@ -30,8 +30,8 @@ roleRef:
   kind: ClusterRole
   name: cluster-admin
 subjects:
-- kind: ServiceAccount
-  name: xray-daemon
+  - kind: ServiceAccount
+    name: xray-daemon
   namespace: default
 ---
 apiVersion: apps/v1
@@ -50,27 +50,27 @@ spec:
         app: xray-daemon
     spec:
       volumes:
-      - name: config-volume
-        configMap:
-          name: xray-config
+        - name: config-volume
+          configMap:
+            name: xray-config
       hostNetwork: true
       containers:
-      - name: xray-daemon
-        image: rnzdocker1/eks-workshop-x-ray-daemon:dbada4c77e6ae10ecf5a7b1c5864aa6522d9fb02
-        imagePullPolicy: Always
-        command: [ "/usr/bin/xray", "-c", "/aws/xray/config.yaml" ]
-        resources:
-          limits:
-            memory: 24Mi
-        ports:
-        - name: xray-ingest
-          containerPort: 2000
-          hostPort: 2000
-          protocol: UDP
-        volumeMounts:
-        - name: config-volume
-          mountPath: /aws/xray
-          readOnly: true
+        - name: xray-daemon
+          image: rnzdocker1/eks-workshop-x-ray-daemon:dbada4c77e6ae10ecf5a7b1c5864aa6522d9fb02
+          imagePullPolicy: Always
+          command: ["/usr/bin/xray", "-c", "/aws/xray/config.yaml"]
+          resources:
+            limits:
+              memory: 24Mi
+          ports:
+            - name: xray-ingest
+              containerPort: 2000
+              hostPort: 2000
+              protocol: UDP
+          volumeMounts:
+            - name: config-volume
+              mountPath: /aws/xray
+              readOnly: true
 ---
 # Configuration for AWS X-Ray daemon
 apiVersion: v1
@@ -120,6 +120,6 @@ spec:
     app: xray-daemon
   clusterIP: None
   ports:
-  - name: incoming
-    port: 2000
-    protocol: UDP
+    - name: incoming
+      port: 2000
+      protocol: UDP

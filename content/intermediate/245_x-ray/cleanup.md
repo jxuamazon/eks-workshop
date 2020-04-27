@@ -14,17 +14,19 @@ This module is not used in subsequent steps, so you can remove the resources now
 Delete the Kubernetes example microservices deployed:
 
 ```
-kubectl delete deployments x-ray-sample-front-k8s x-ray-sample-back-k8s
+kubectl delete deployments x-ray-sample-front-k8s 
+#kubectl delete deployments x-ray-sample-back-k8s
 
-kubectl delete services x-ray-sample-front-k8s x-ray-sample-back-k8s
+kubectl delete services x-ray-sample-front-k8s
+#kubectl delete services x-ray-sample-back-k8s
 ```
 
 Delete the X-Ray DaemonSet:
 
 ```
-kubectl delete -f https://eksworkshop.com/intermediate/245_x-ray/daemonset.files/xray-k8s-daemonset.yaml
+# kubectl delete -f https://eksworkshop.com/intermediate/245_x-ray/daemonset.files/xray-k8s-daemonset.yaml
 ```
 
 ```
-aws iam detach-role-policy --role-name $ROLE_NAME --policy-arn arn:aws:iam::aws:policy/AWSXRayDaemonWriteAccess
+#aws iam detach-role-policy --role-name $ROLE_NAME --policy-arn arn:aws:iam::aws:policy/AWSXRayDaemonWriteAccess
 ```

@@ -41,7 +41,7 @@ kubectl get svc --namespace default -w understood-zebu-wordpress
 You’ll need the URL for your WordPress site. This is easily accomplished by running the command below from your terminal window. Copy and paste it from the output of your install of Wordpress. 
 
 ```bash
- export SERVICE_IP=$(kubectl get svc --namespace default understood-zebu-wordpress --template "{{ range (index .status.loadBalancer.ingress 0) }}{{.}}{{ end }}")
+ export SERVICE_IP=$(kubectl get svc understood-zebu-wordpress --template "{{ range (index .status.loadBalancer.ingress 0) }}{{.}}{{ end }}")
  
   echo "WordPress URL: http://$SERVICE_IP/"
   echo "WordPress Admin URL: http://$SERVICE_IP/admin"

@@ -10,21 +10,24 @@ We now have the foundation in place to deploy microservices, which are instrumen
 In this step, we are going to deploy example [front-end](https://github.com/aws-samples/eks-workshop/tree/master/content/intermediate/245_x-ray/sample-front.files) and [back-end](https://github.com/aws-samples/eks-workshop/tree/master/content/intermediate/245_x-ray/sample-back.files) microservices to the cluster. The example services are already instrumented using the [X-Ray SDK for Go](https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-go.html). Currently, X-Ray has SDKs for Go, Python, Node.js, Ruby, .NET and Java.
 
 ```
+wget https://eksworkshop.com/intermediate/245_x-ray/sample-front.files/x-ray-sample-front-k8s.yml
 kubectl apply -f https://eksworkshop.com/intermediate/245_x-ray/sample-front.files/x-ray-sample-front-k8s.yml
 
-kubectl apply -f https://eksworkshop.com/intermediate/245_x-ray/sample-back.files/x-ray-sample-back-k8s.yml
+
+wget https://eksworkshop.com/intermediate/245_x-ray/sample-back.files/x-ray-sample-back-k8s.yml
+#kubectl apply -f https://eksworkshop.com/intermediate/245_x-ray/sample-back.files/x-ray-sample-back-k8s.yml
 ```
 
 To review the status of the deployments, you can run:
 
 ```
-kubectl describe deployments x-ray-sample-front-k8s x-ray-sample-back-k8s
+#kubectl describe deployments x-ray-sample-front-k8s x-ray-sample-back-k8s
 ```
 
 For the status of the services, run the following command:
 
 ```
-kubectl describe services x-ray-sample-front-k8s x-ray-sample-back-k8s
+#kubectl describe services x-ray-sample-front-k8s x-ray-sample-back-k8s
 ```
 
 Once the front-end service is deployed, run the following command to get the Elastic Load Balancer (ELB) endpoint and open it in a browser.

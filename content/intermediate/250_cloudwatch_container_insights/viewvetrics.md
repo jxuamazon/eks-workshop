@@ -9,7 +9,9 @@ weight: 9
 
 #### Now let's navigate to CloudWatch Container Insights to view the data we've generated.
 
-https://console.aws.amazon.com/cloudwatch/home?region=us-east-2#cw:dashboard=Container;context=~(clusters~'eksworkshop-eksctl~dimensions~(~)~performanceType~'Service)   
+https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#cw:dashboard=Container;context=~(clusters~'eksworkshop-eksctl~dimensions~(~)~performanceType~'Service)   
+
+https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#container-insights:performance/EKS:Namespace?~(query~(controls~(CW*3a*3aEKS.cluster~(~'eksworkshop-eksctl)~CW*3a*3aEKS.namespace~(~'amazon-cloudwatch-ns-2)))~context~())
 
 From here you can choose a number of different views. We’re going to narrow down our timelines to a custom time rangeof just 30 minute so we can zoom into our recently collected insights. 
 

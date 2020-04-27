@@ -6,7 +6,7 @@ weight: 6
 
 
 
-To verify that data is being collected in CloudWatch, launch the CloudWatch Containers UI in your browser: https://us-east-2.console.aws.amazon.com/cloudwatch/home?region=us-east-2#cw:dashboard=Container;context=~(clusters~'eksworkshop-eksctl~dimensions~(~)~performanceType~'Service  
+To verify that data is being collected in CloudWatch, launch the CloudWatch Containers UI in your browser: https://us-east-1.console.aws.amazon.com/cloudwatch/home?region=us-east-1#cw:dashboard=Container;context=~(clusters~'eksworkshop-eksctl~dimensions~(~)~performanceType~'Service  
 {{% notice info %}} You may need to copy and paste the above link into your browser
 {{% /notice %}} 
 

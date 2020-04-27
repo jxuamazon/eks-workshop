@@ -13,7 +13,7 @@ Now that Siege is setup and running, we're going to generate some load to our Wo
 From your terminal window in the Siege directory, run the following command.
 
 ```
-siege -c 200 -i {YOURLOADBALANCER URL}
+siege -c 20 -i $SERVICE_IP
 ```
 
 <div data-proofer-ignore>

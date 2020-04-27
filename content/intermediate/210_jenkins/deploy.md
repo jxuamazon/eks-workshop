@@ -15,13 +15,15 @@ manage the drift as you need to update releases
 
 #### Install Jenkins
 
+
 ```
-helm install cicd stable/jenkins --set rbac.create=true,master.servicePort=80,master.serviceType=LoadBalancer
+helm install cicd stable/jenkins --namespace $MY_NAMESPACE --set rbac.create=true,master.servicePort=80,master.serviceType=LoadBalancer
 ```
 
 The output of this command will give you some additional information such as the
 `admin` password and the way to get the host name of the ELB that was
 provisioned.
+
 
 Let's give this some time to provision and while we do let's watch for pods
 to boot.
@@ -35,7 +37,8 @@ You should see the pods in `init`, `pending` or `running` state.
 Once this changes to `running` we can get the `load balancer` address.
 
 ```
-export SERVICE_IP=$(kubectl get svc --namespace default cicd-jenkins --template "{{ range (index .status.loadBalancer.ingress 0) }}{{ . }}{{ end }}")
+printf $(kubectl get secret --namespace $MY_NAMESPACE cicd-jenkins -o jsonpath="{.data.jenkins-admin-password}" | base64 --decode);echo
+export SERVICE_IP=$(kubectl get svc --namespace $MY_NAMESPACE cicd-jenkins --template "{{ range (index .status.loadBalancer.ingress 0) }}{{ . }}{{ end }}")
 echo http://$SERVICE_IP/login
 ```
 

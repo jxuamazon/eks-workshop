@@ -12,11 +12,11 @@ We'll be using the QuickStart to make the install simple and easy for the Contai
 You can find the full information and manual install steps here: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Container-Insights-setup-EKS-quickstart.html 
 
 
-From your Cloud9 Terminal you will just need to run the following command. Make sure to replace the region name placeholder `<AWS_REGION_NAME>` with the region name where the cluster has been deployed.
+From your Cloud9 Terminal you will just need to run the following command. 
 
 
 ```
-curl https://raw.githubusercontent.com/aws-samples/amazon-cloudwatch-container-insights/master/k8s-yaml-templates/quickstart/cwagent-fluentd-quickstart.yaml | sed "s/{{cluster_name}}/eksworkshop-eksctl/;s/{{region_name}}/<AWS_REGION_NAME>/" | kubectl apply -f -
+curl https://raw.githubusercontent.com/aws-samples/amazon-cloudwatch-container-insights/master/k8s-yaml-templates/quickstart/cwagent-fluentd-quickstart.yaml | sed "s/{{cluster_name}}/eksworkshop-eksctl/;s/{{region_name}}/${AWS_REGION}/;s/amazon-cloudwatch/amazon-cloudwatch-${MY_NAMESPACE}/"| kubectl apply --namespace amazon-cloudwatch-${MY_NAMESPACE} -f -
 ```
 
 With this quick start it will push the necessary daemon sets to collect the data for CloudWatch Containers Insights.

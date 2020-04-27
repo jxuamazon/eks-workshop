@@ -28,7 +28,7 @@ tar -xvf siege-latest.tar.gz
 
 
 ```
-cd siege-4.0.4
+cd siege-4.0.5
 ```
 (change for version installed)
 

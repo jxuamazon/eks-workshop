@@ -20,16 +20,16 @@ func init() {
 }
 ```
 
-To deploy the X-Ray DaemonSet:
+{{% notice warning %}}
+You do not need to deploy this DaemonSet in your namespace for this workshop. A set of xray daemonset has been deployed into default namespace for you (only need one set of daemonsets for the cluster). 
 
-```
-kubectl create -f https://eksworkshop.com/intermediate/245_x-ray/daemonset.files/xray-k8s-daemonset.yaml
-```
+$ kubectl create -f  https://eksworkshop.myoctank.net/intermediate/245_x-ray/daemonset.files/xray-k8s-daemonset.yaml
+{{% /notice%}}
 
 To see the status of the X-Ray DaemonSet:
 
 ```
-kubectl describe daemonset xray-daemon
+kubectl describe daemonset xray-daemon --namespace default
 ```
 
 The folllowing is an example of the command output:
@@ -41,7 +41,7 @@ To view the logs for all of the X-Ray daemon pods run the following
 {{% /notice %}}
 
 ```
-kubectl logs -l app=xray-daemon
+kubectl logs -l app=xray-daemon --namespace default
 ```
 
 

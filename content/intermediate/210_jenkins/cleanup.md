@@ -7,5 +7,5 @@ weight: 60
 To uninstall Jenkins, run:
 
 ```
-helm uninstall cicd
+helm uninstall cicd --namespace $MY_NAMESPACE
 ```

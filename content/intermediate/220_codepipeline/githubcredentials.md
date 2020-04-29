@@ -23,3 +23,10 @@ Enter a value for **Token description**, check the **repo** permission scope and
 Copy the **personal access token** and save it in a secure place for the next step
 
 ![Generate New](/images/codepipeline/github_copy_access.png)
+
+{{% notice warning%}}
+Edit the following line in the buildspec.yml, otherwise your deployment will be in default namespace
+{{% /notice %}}
+
+- From: kubectl apply -f hello-k8s.yml 
+- To: kubectl apply -f hello-k8s.yml --namespace $MY_NAMESPACE

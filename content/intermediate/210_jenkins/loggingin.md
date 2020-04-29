@@ -18,7 +18,7 @@ From here we can log in using:
 
 
 ```
-printf $(kubectl get secret --namespace default cicd-jenkins -o jsonpath="{.data.jenkins-admin-password}" | base64 --decode);echo
+printf $(kubectl get secret --namespace $MY_NAMESPACE cicd-jenkins -o jsonpath="{.data.jenkins-admin-password}" | base64 --decode);echo
 ```
 
 The output of this command will give you the default password for your `admin`

@@ -31,7 +31,7 @@ It may take a few minutes for the LoadBalancer to be available.
 
 Watch the status using the following command
 ```bash
-kubectl get svc --namespace default -w understood-zebu-wordpress
+kubectl get svc --namespace $MY_NAMESPACE -w understood-zebu-wordpress
 ``` 
 *(depending on time of install the Wordpress version can change)*
 

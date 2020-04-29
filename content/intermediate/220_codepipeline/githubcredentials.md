@@ -25,8 +25,12 @@ Copy the **personal access token** and save it in a secure place for the next st
 ![Generate New](/images/codepipeline/github_copy_access.png)
 
 {{% notice warning%}}
-Edit the following line in the buildspec.yml, otherwise your deployment will be in default namespace
+Edit the following line in the buildspec.yml, otherwise your deployment will be in default namespace.
+Also, 
 {{% /notice %}}
-
-- From: kubectl apply -f hello-k8s.yml 
-- To: kubectl apply -f hello-k8s.yml --namespace $MY_NAMESPACE
+```
+# From: 
+# kubectl apply -f hello-k8s.yml 
+# To:  Note:: double --
+kubectl apply -f hello-k8s.yml --namespace $MY_NAMESPACE
+```

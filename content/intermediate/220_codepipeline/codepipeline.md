@@ -34,6 +34,10 @@ target="_blank" class="btn btn-default">
 Launch from local file
 </a>
 
+{{% notice warning%}}
+Change the Stack name to eksws-codepipeline-'your player number' to avoid collision 
+{{% /notice %}}
+
 After the console is open, enter your GitHub username, personal access token (created in previous step), check the acknowledge box and then click the "Create stack" button located at the bottom of the page.
 
 ![CloudFormation Stack](/images/codepipeline/cloudformation_stack.png)
